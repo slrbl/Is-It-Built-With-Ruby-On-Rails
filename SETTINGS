@@ -1,0 +1,5 @@
+[GENERAL]
+description=Check if the provided website was built in Ruby On Rails
+timeout=30
+use_weight=False
+

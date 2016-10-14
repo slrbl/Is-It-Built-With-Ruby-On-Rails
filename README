@@ -1,0 +1,21 @@
+RORCheckerV1.0
+walid.daboubi@gmail.com
+
+How to launch:
+	$ python ./IsItRoR.py -u www.RubyOnRailsWebSite1.com,www.RubyOnRailsWebSite2.com,www.RubyOnRailsWebSite2.com
+
+To get help:
+	$ python ./IsItRoR.py -h
+
+How to add plugins
+	- Create a heurestic script in your favorite programming language and save it to ./PLUGINS
+	- Add parameters to ./PLUGINS.conf file as the following:
+		[MyCoolPlugin]
+		lang:my_favorite_programming_language
+		code:./plugins/MyCoolPlugin.ext
+		weight:value
+        /!\ As an enhancement, adding plugins could be done automatically: a script that pars PLUGINS folder and update PLUGINS.conf file
+
+What is weight ?
+	Attributing a weight for each plugin allows you to me make some plugins more important 
+	than other ones, and thus, make the classification more accurate
